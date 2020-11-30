@@ -1,0 +1,42 @@
+{
+    "name": "skorelabs/laravel-tools",
+    "description": "A toolset of useful commands and extra stuff not included on the framework",
+    "license": "MIT",
+    "keywords": [
+        "skore-labs",
+        "laravel",
+        "toolset",
+        "commands",
+        "helpers"
+    ],
+    "authors": [
+        {
+            "name": "Rubén Robles",
+            "email": "d8vjork@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/database": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.6.0|~3.7.0|~3.8.0",
+        "phpunit/phpunit": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SkoreLabs\\LaravelTools\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SkoreLabs\\LaravelTools\\ServiceProvider"
+            ]
+        }
+    }
+}
